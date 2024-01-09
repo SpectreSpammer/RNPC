@@ -30,6 +30,8 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+/* end of slider */
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
