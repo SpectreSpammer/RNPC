@@ -828,51 +828,58 @@
 <!-- BEGIN CONTACT SECTION -->
 <section id="contact">
     <!-- Footer -->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="heading-left-light">
-                    <h2>Say hello to Metronic</h2>
-                    <p>To try the most advanced business platform <br> for mobile and desktop</p>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="heading-left-light">
+                        <h2>Say hello to Metronic</h2>
+                        <p>To try the most advanced business platform <br> for mobile and desktop</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <form action="https://formsubmit.co/rnavarra.business@gmail.com" method="POST">
-                    <div class="form">
-                        <div class="form-wrap">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <input type="text" name="name" placeholder="Your Name" class="form-control" required>
-                                </div>
-                                <div class="col-md-5">
-                                    <input type="text" name="location" placeholder="Complete Address" class="form-control" required>
-                                </div>
-                                <div class="col-md-5">
-                                    <input type="email" name="email" placeholder="Your Email" class="form-control">
-                                </div>
-                               
-                                <div class="col-md-5">
-                                    <input type="tel" name="phone" placeholder="Phone Number" class="form-control">
-                                </div>
-                                <div class="col-md-5">
-                                    <input type="text" name="inquiry" placeholder="Inquiry" class="form-control" required>
-                                </div>
-                                <div class="col-md-5">
-                                    <input type="text" name="brand_model" placeholder="Brand and Model" class="form-control">
+                <div class="col-sm-6">
+                    <form id="contactForm" action="https://formsubmit.co/rnavarra.business@gmail.com" method="POST">
+                        <div class="form">
+                            <div class="form-wrap">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="text" name="location" placeholder="Complete Address" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="email" name="email" placeholder="Your Email" class="form-control">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="tel" name="phone" placeholder="Phone Number" class="form-control">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="text" name="inquiry" placeholder="Inquiry" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="text" name="brand_model" placeholder="Brand and Model" class="form-control">
+                                    </div>
                                 </div>
                             </div>
-                        
                         </div>
-                    </div>
-                    <textarea rows="8" name="details" placeholder="More Details ..." class="border-top-transparent form-control mt-3"></textarea>
-                    <button type="submit" class="btn btn-danger btn-md btn-block mt-3">Send it</button>
-                </form>
-            </div>
-        </div><!-- //end row -->
+                        <textarea rows="8" name="details" placeholder="More Details ..." class="border-top-transparent form-control mt-3"></textarea>
+                        <button type="submit" class="btn btn-danger btn-md btn-block mt-3">Submit</button>
+                    </form>
+                </div>
+            </div><!-- //end row -->
+        </div>
     </div>
-</div>
-<!-- End Footer -->
+    <!-- End Footer -->
+
+        <!-- Modal for Footer-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>We received your inquiry, please standby for the response.</p>
+            </div>
+        </div>
+        <!-- End Modal for Footer-->
 </section>
 
             <!-- Footer Coypright -->
