@@ -1872,13 +1872,23 @@ a:focus {
   color: #bf5757;
 }
 
-/*--------------------------------------------------
-	[PORTFOLIO]
-----------------------------------------------------*/
 .portfolio {
   padding: 100px 0 100px 0;
+  font-size: 24px;
 }
 
+/* Adjusting the data-title font size */
+.cbp-lightbox::before {
+  content: attr(data-title);
+  display: block;
+  font-size: 24px; /* Set the font size to 24px */
+  font-weight: bold; /* Optional: Make the text bold */
+  color: #333; /* Optional: Change the text color */
+  position: absolute;
+  top: -30px; /* Adjust position if necessary */
+  left: 0;
+  white-space: nowrap;
+}
 /*--------------------------------------------------
 	[PRICING]
 ----------------------------------------------------*/
@@ -2037,6 +2047,12 @@ a:focus {
   /* Portfolio Icons */
 }
 
+.cbp-popup-lightbox-title {
+  padding-right: 70px;
+  font: 400 20px / 18px "Open Sans", sans-serif;
+  color: #eee;
+}
+
 .cube-portfolio .cbp-l-filters-alignCenter .cbp-filter-item {
   font-size: 14px;
   padding: 6px 15px;
@@ -2116,6 +2132,7 @@ a:focus {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
+
 
 /*--------------------------------------------------
     [Bootstrap Carousel]
