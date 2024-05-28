@@ -49,10 +49,13 @@
 ----------------------------------------------------*/
 /* Page on Scroll */
 .page-on-scroll .page-header {
+  
   background: #fff;
   transition-duration: 100ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  scroll-behavior: smooth;
+  /*additional*/
 }
 
 .page-on-scroll .page-header .navbar {
@@ -1995,23 +1998,25 @@ a:focus {
   font-size: 30px;
   margin: 0 0 40px;
   text-transform: uppercase;
-  color: #fff;
+  color:black;
 }
 
 .footer-copyright p {
   margin-bottom: 0;
-  color: #8693a7;
+  color: black;
 }
 
 .footer-copyright .copyright-socials {
   padding: 0;
   margin-bottom: 40px;
   list-style: none;
+ 
 }
 
 .footer-copyright .copyright-socials li {
   padding: 0 3px;
   display: inline-block;
+ 
 }
 
 .footer-copyright .copyright-socials li i {
