@@ -13,8 +13,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         }
     }).then(response => {
         if (response.ok) {
-            // If the submission is successful, refresh the page
-            window.location.reload();
+            // If the submission is successful, show the success modal
+            $('#successModal').modal('show');
         } else {
             alert('Something went wrong. Please try again.');
         }
@@ -22,4 +22,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         console.error('Error:', error);
         alert('Something went wrong. Please try again.');
     });
+});
+
+// Add event listener to the close button of the modal
+document.getElementById('closeModalBtn').addEventListener('click', function() {
+    // Reload the page after closing the modal
+    window.location.reload();
 });
