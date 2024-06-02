@@ -47,6 +47,11 @@
 /*--------------------------------------------------
 	[PAGE HEADER]
 ----------------------------------------------------*/
+
+#intro {
+  margin-top: 70px; /* Adjust the value as needed */
+}
+
 /* Page on Scroll */
 .page-on-scroll .page-header {
   
@@ -64,7 +69,7 @@
 
 .page-header {
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0; /* Add a bottom margin */
   border-bottom: none;
   /* Navbar */
   /* Navbar Toggle */
@@ -130,6 +135,7 @@
 .page-header .navbar-nav li.active>a,
 .page-header .navbar-nav li>a:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
+ 
 }
 
 .page-header .navbar-nav li>a:focus,
@@ -235,6 +241,7 @@
 
   .page-header .navbar-nav li>a {
     padding: 5px 12px;
+    color: black;
   }
 }
 
@@ -1785,41 +1792,32 @@ a:focus {
 }
 
 /*--------------------------------------------------
+OWL CLIENTS
+---------------------------------------------------*/
+.owl-carousel .item img {
+  width: 440px;  /* Adjust the image width as needed */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+.owl-carousel .item {
+  display: flex;          /* Use flexbox to center content if needed */
+  align-items: center;    /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  margin: 0 20px;         /* Horizontal margin for spacing between items */
+}
+/*--------------------------------------------------
 	[CLIENTS]
 ----------------------------------------------------*/
 .clients {
   /* Clients Quotes */
+
+
 }
 
 .clients .clients-bg {
   padding-top: 100px;
   background: #3194a4;
   /* Owl Carousel */
-}
-
-.clients .clients-bg .owl-carousel {
-  text-align: center;
-}
-
-.clients .clients-bg .owl-carousel .item {
-  cursor: pointer;
-}
-
-.clients .clients-bg .owl-carousel .item img {
-  display: block;
-  text-align: center;
-  width: 140px !important;
-  height: auto;
-  margin: 0 auto 40px;
-  opacity: .35;
-}
-
-.clients .clients-bg .owl-carousel .item:hover img {
-  opacity: 1;
-}
-
-.clients .clients-bg .owl-carousel .active.center .item img {
-  opacity: 1;
 }
 
 .clients .clients-quotes {
@@ -2164,6 +2162,8 @@ a:focus {
   text-align: center;
 }
 
+
+
 .carousel {
   /* Carousel Item Background Images */
   /* Carousel Titles */
@@ -2193,29 +2193,59 @@ a:focus {
 .carousel .item {
   width: 100%;
   height: 100%;
-  min-height: 580px;
+  min-height: 900px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .carousel .item {
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel .item {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel .item {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel .item {
+    min-height: 400px;
+  }
+}
+
+/* Additional Carousel Styles */
+.carousel .carousel-indicators {
+  bottom: 0;
 }
 
 .carousel .carousel-item-one {
-  background: url(../../../assets/onepage2/img/bg/bg_slider1.jpg);
+  background: url(../../../assets/onepage2/img/bg/Desktop\ Repairs.png);
   background-size: cover;
   background-position: center center;
 }
 
 .carousel .carousel-item-two {
-  background: url(../../../assets/onepage2/img/bg/bg_slider2.jpg);
+  background: url(../../../assets/onepage2/img/bg/Cellphone\ Repairs.png);
   background-size: cover;
   background-position: center center;
 }
 
 .carousel .carousel-item-three {
-  background: url(../../../assets/onepage2/img/bg/bg_slider3.jpg);
+  background: url(../../../assets/onepage2/img/bg/Laptop\ Repairs.png);
   background-size: cover;
   background-position: center center;
 }
 
 .carousel .carousel-item-four {
-  background: url(../../../assets/onepage2/img/bg/bg_slider1.jpg);
+  background: url(../../../assets/onepage2/img/bg/IT\ Solutions.png);
   background-size: cover;
   background-position: center center;
 }
