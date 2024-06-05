@@ -1817,6 +1817,7 @@ a:focus {
   overflow: hidden;
 }
 
+
 .clients .item > a {
   background: rgba(229,74,26,0.85);
   position: absolute;
@@ -1835,34 +1836,50 @@ a:focus {
   color: #fff;
 }
 
+
 .clients .item:hover > a {
   bottom: 0;
 }
+
+
 
 .clients .item > a:hover {
   text-decoration: none;
 }
 
+
+/*
 .ie8 .clients .item > a {
  
 }
+*/
 
+/*
 .clients .item .hidden-link {
   bottom: -100% !important;
 }
+*/
 
+/*
 .clients .item strong {
-  font: 400 17px/1.2 "Open Sans", Arial, sans-serif;
+  font: 400 1700px/1.2 "Open Sans", Arial, sans-serif;
   display: block;
   margin-bottom: 4px;
   margin-left: 10px;
 }
+*/
+
+/*
 .clients .item em {
-  font: 300 13px "Open Sans", Arial, sans-serif;
+  font: 300 50000px "Open Sans", Arial, sans-serif;
   display: block;
   margin-bottom: 10px;
   margin-left: 10px;
 }
+*/
+
+
+
 .clients .item b {
   font-weight: 300;
   font-size: 12px;
@@ -1871,29 +1888,36 @@ a:focus {
   border: solid 1px #fff;
   padding: 8px 15px 7px;
   margin-left: 10px;
-  text-align: center; /* Center the text within the b element */
+  text-align: center; 
 }
+
+
+
 
 .valign-center {
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-  height: 100%; /* Ensure it takes up the full height of its container */
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
 }
 
+
+/*
 .valign-center-elem {
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center;  Horizontally center the content 
+  align-items: center;  Vertically center the content 
 }
+*/
 
+/*
 .clients .item b:hover {
   background: #fff;
   color: #E85425;
   border-color: #fff;
   
 }
-
+*/
 /*END*/
 
 /*----------------------------------------------------------
@@ -1906,6 +1930,12 @@ BEGIN FANCY BOX
 .fancybox-opened {
   z-index: 100001;
 }
+
+/* New CSS rule to change the font size of the data caption */
+.fancybox-caption {
+  font-size: 50px;
+}
+
 /*--------------------------------------------------------
 END
 ---------------------------------------------------------*/
