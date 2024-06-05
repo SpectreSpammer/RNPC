@@ -2011,70 +2011,78 @@ END
   }
 }
 
-/*--------------------------------------------------
-	[FOOTER]
-----------------------------------------------------*/
-.footer {
-  background: #2c3a46;
-  padding: 100px 0 100px 0;
+/*-------------------------------------------------
+Modal Footer
+-------------------------------------------------*/
+.modal-footer {
+    background-color: #f8f9fa; /* Change to your desired background color */
+    border-top: 1px solid #dee2e6; /* Add a border on top */
+    padding: 15px; /* Add some padding for better spacing */
 }
-
 /*--------------------------------------------------
-	[FOOTER COPYRIGHT]
+    [FOOTER]
 ----------------------------------------------------*/
-.footer-copyright {
-  padding: 50px 0;
-  text-align: center;
+
+/***
+Pre-Footer and pre-footer elements
+***/
+.pre-footer {
   background: white;
+  color: #b0b0b0;
+  padding: 45px 0;
 }
-
-.footer-copyright h3 {
-  font-size: 30px;
-  margin: 0 0 40px;
-  text-transform: uppercase;
-  color:black;
-}
-
-.footer-copyright p {
-  margin-bottom: 0;
+.pre-footer h2 {
+  font: 400 21px "PT Sans Narrow", Arial, sans-serif;
+  margin: 0 0 8px;
   color: black;
+  text-transform: uppercase;
+}
+.pre-footer address {
+  line-height: 1.7;
+}
+.pre-footer a {
+  color: #57c8eb;
 }
 
-.footer-copyright .copyright-socials {
-  padding: 0;
-  margin-bottom: 40px;
-  list-style: none;
- 
-}
-
-.footer-copyright .copyright-socials li {
-  padding: 0 3px;
-  display: inline-block;
- 
-}
-
-.footer-copyright .copyright-socials li i {
-  width: 35px;
-  height: 35px;
-  padding: 10px;
-  color: #4a5a69;
-  font-size: 16px;
-  text-align: center;
-  background: #2b3641;
-  display: inline-block;
-}
-
-.footer-copyright .copyright-socials li i:hover {
-  background: #303c47;
+/* footer */
+.footer {
+  background: #272626;
   color: #fff;
-  transition-duration: 400ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  font-size: 12px;
+  padding: 15px 0;
+  text-align: center;
 }
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer a:hover {
+  text-decoration: none;
+}
+.copyright {
+  padding-top: 7px;
+}
+
 
 /*--------------------------------------------------
 	[CUBEPORTFOLIO]
 ----------------------------------------------------*/
+
+/*----------------------------------------------------
+From chat gpt for video
+------------------------------------------------------*/
+/* Custom CSS for .others video */
+.cbp-item.others video {
+    width: 100%;
+    height: auto;
+}
+
+/* Exclude .others from "All Stuff" filter */
+.cbp-filter-item[data-filter="*"]:not(.cbp-filter-item-active) ~ .cbp-filter-item.others {
+    display: none;
+}
+
+
 /* Popup Wrap */
 .cbp-popup-wrap {
   z-index: 9999 !important;
