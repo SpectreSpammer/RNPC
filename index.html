@@ -1345,6 +1345,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6">
+                            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
                             <form id="contactForm" action="https://formspree.io/f/mgegbbgy" method="POST">
                                 <input type="hidden" name="_subject" value="New inquiry from contact form">
                                 <input type="hidden" name="_captcha" value="false">
@@ -1352,34 +1353,28 @@
                                     <div class="form-wrap">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <input type="text" name="name" placeholder="Your Name"
-                                                    class="form-control" required>
+                                                <input type="text" name="name" placeholder="Your Name" class="form-control" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="location" placeholder="Complete Address"
-                                                    class="form-control" required>
+                                                <input type="text" name="location" placeholder="Complete Address" class="form-control" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="email" name="email" placeholder="Your Email"
-                                                    class="form-control" required>
+                                                <input type="email" name="email" placeholder="Your Email" class="form-control" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="tel" name="phone" placeholder="Phone Number"
-                                                    class="form-control" required>
+                                                <input type="tel" name="phone" placeholder="Phone Number" class="form-control" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="inquiry" placeholder="What kind of Services?"
-                                                    class="form-control" required>
+                                                <input type="text" name="inquiry" placeholder="What kind of Services?" class="form-control" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="brand_model"
-                                                    placeholder="Walk-in or Home Service" class="form-control">
+                                                <input type="text" name="brand_model" placeholder="Walk-in or Home Service" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <textarea rows="8" name="details" placeholder="More Details ..."
-                                    class="border-top-transparent form-control mt-3"></textarea>
+                                <div class="g-recaptcha mb-3" data-sitekey="YOUR_SITE_KEY"></div>
+                                <textarea rows="8" name="details" placeholder="More Details ..." class="border-top-transparent form-control mt-3"></textarea>
                                 <button type="submit" class="btn btn-danger btn-md btn-block mt-3">Submit</button>
                             </form>
                         </div>
@@ -1492,6 +1487,10 @@
     <!--BEGIN POPPER JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <!-- END POPPER JS-->
+
+    <!--  START CAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <!-- END CAPTCHA-->
     <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
